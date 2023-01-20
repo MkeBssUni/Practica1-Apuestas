@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deporpedia</title>
+    <link rel="shortcut icon" href="../assets/img/icono.png" type="image/x-icon">
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <header class="sticky-top"> <!-- Trae el navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/assets/img/icono.png" alt="PAGINA-APUESTAS DEPORTES CASINO" width="30" height="32"
+                        class="d-inline-block align-text-top">
+                    Deporpedia
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Football</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Basquetball</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Volleyball</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Box</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Div principal -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-10">
+                <h1 class="display-6 mt-3 mx-5 mx-md-2 mx-sm-1">
+                    Realiza tus apuestas
+                </h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 my-3 justify-content-center">
+                            <div class="container">
+                                <form>
+
+                                    <div class="row my-3">
+                                        <div class="col-5 text-center">
+                                            <img src="../assets/img/halcones.jpg" alt="HALCONES-UTEZ DEPORTES-ZAPATA"
+                                                class="img-thumbnail" width="250" height="250" />
+                                            <h5 class="my-3 ">HALCONES-UTEZ</h5>
+                                            <input type="number" class="form-control" placeholder="Goles" required />
+                                        </div>
+                                        <div class="col-2 d-flex align-items-center justify-content-center">
+                                            <h1 class="display-6">VS</h1>
+                                        </div>
+                                        <div class="col-5 text-center">
+                                            <img src="../assets/img/atleticoZacatepec.png"
+                                                alt="ATLETICO-ZACATEPEC DEPORTES-ZACATEPEC" class="img-thumbnail"
+                                                width="250" height="250" />
+                                            <h5 class="my-3">ATLETICO ZACATEPEC</h5>
+                                            <input type="number" class="form-control" placeholder="Goles" required />
+                                        </div>
+                                    </div>
+                                    <div class="row my-3">
+                                        <div class="col d-flex justify-content-center">
+                                            <button class="btn btn-success" type="submit">Apostar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-2">
+                <aside class="my-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img/nuevoIngreso.jpeg" class="card-img-top"
+                            alt="INGRESO-UNIVERSIDADES ADMISION-UTEZ">
+                        <div class="card-body">
+                            <h5 class="card-title">Proceso Admisi&oacute;n UTEZ</h5>
+                            <p class="card-text">La UTEZ arranca con su proceso de admisión, si estás interesado en
+                                conocer la oferta educativa da click en el siguiente enlace.</p>
+                            <a href="http://www.utez.edu.mx/index.php/ofeducativa" target="_blank"
+                                class="btn btn-success">Conoce m&aacute;s</a>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="my-2">
+                    <div class="card" style="width: 18rem;">
+                        <img src="../assets/img/futUtez.jpg" class="card-img-top" alt="UTEZ CAMPEONES-MORELOS">
+                        <div class="card-body">
+                            <p class="card-text">
+                                Este fin de semana, el equipo de futbol de la UTEZ, se coronó campeón de la liga de
+                                futbol Interuniversidades
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector('form').addEventListener('submit', function (e) {
+        e.preventDefault()
+        window.location.href = '../index.html'
+    })
+</script>
+
+</html>
